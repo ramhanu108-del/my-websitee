@@ -14,10 +14,13 @@
 
 <!-- ✅ FORCE HASH ROUTING -->
 <script>
-  if (!window.location.hash) {
-    var path = window.location.pathname.replace('/my-websitee', '');
-    window.location.replace('/my-websitee/#' + path);
-  }
+  // Fix GitHub Pages routing
+  (function () {
+    const path = window.location.pathname;
+    if (path !== "/my-websitee/") {
+      window.location.replace("/my-websitee/#" + path);
+    }
+  })();
 </script>
 
 <!-- ✅ CSS -->
