@@ -4,23 +4,25 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>SmartTools Hub - Free Image Compressor & PDF Tools</title>
+<title>SmartTools Hub</title>
 
-<meta name="description" content="Compress images to 10KB, 50KB, resize photos, convert PDFs and more using SmartTools Hub." />
+<meta name="description" content="Free tools for image compression, resizing, and PDF conversion." />
 <meta name="robots" content="index, follow" />
 
-<!-- ✅ ROUTING FIX -->
+<!-- ✅ ROUTING FIX (VERY IMPORTANT) -->
 <script>
-  (function () {
-    const path = window.location.pathname;
-    if (path !== "/my-websitee/") {
-      window.location.replace("/my-websitee/#" + path);
-    }
-  })();
+(function () {
+  var path = window.location.pathname;
+  var repo = "/my-websitee";
+
+  if (path !== repo + "/" && !path.includes("#")) {
+    window.location.replace(repo + "/#" + path.replace(repo, ""));
+  }
+})();
 </script>
 
 <!-- ✅ CSS -->
-<link rel="stylesheet" href="/my-websitee/assets/index-CRFyqDHh.css">
+<link rel="stylesheet" href="./assets/index-CRFyqDHh.css">
 
 </head>
 
@@ -29,7 +31,7 @@
 <div id="root"></div>
 
 <!-- ✅ JS -->
-<script type="module" src="/my-websitee/assets/index-iXa-568r.js"></script>
+<script type="module" src="./assets/index-iXa-568r.js"></script>
 
 </body>
 </html>
