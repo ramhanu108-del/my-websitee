@@ -2,8 +2,9 @@
 <html>
 <head>
   <script>
+    var repo = "/my-websitee";
     var path = window.location.pathname;
-    window.location.replace("/my-websitee/#" + path);
+    window.location.replace(repo + "/#" + path.replace(repo, ""));
   </script>
 </head>
 <body></body>
