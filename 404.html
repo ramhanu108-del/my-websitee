@@ -3,9 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <script>
-    // Redirect all 404 routes to index.html
-    var path = window.location.pathname;
-    var newUrl = "/my-websitee/#" + path;
+    var path = window.location.pathname.replace('/my-websitee', '');
+    var newUrl = '/my-websitee/#' + path;
     window.location.replace(newUrl);
   </script>
 </head>
