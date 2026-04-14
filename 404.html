@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=/my-websitee/" />
+  <meta charset="utf-8" />
+  <script>
+    // Redirect all 404 routes to index.html
+    var path = window.location.pathname;
+    var newUrl = "/my-websitee/#" + path;
+    window.location.replace(newUrl);
+  </script>
 </head>
 <body></body>
 </html>
